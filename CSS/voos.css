@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --azul-marinho: #010d2c;
+  --cartao: #0c1f4f;
+  --amarelo: #e8d86b;
+  --amarelo-forte: #f3d721;
+  --cinza: #6d6c6c;
+  --linha: rgba(109, 108, 108, 0.4);
+}
+
+html {
+  background: #00091e;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #00091e;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.aplicativo {
+  position: relative;
+  width: min(100%, 430px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-bottom: 90px;
+  overflow-x: hidden;
+  background: var(--azul-marinho);
+}
+
+.icone {
+  height: 30px;
+  width: auto;
+  max-width: 30px;
+  flex-shrink: 0;
+}
+
+.navegacao-inferior {
+  position: fixed;
+  z-index: 10;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(calc(100% - 38px), 392px);
+  height: 52px;
+  padding: 3px 8px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: 1px solid var(--linha);
+  border-radius: 100px;
+  background: var(--cartao);
+}
+
+.navegacao-inferior button,
+.navegacao-inferior a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 10px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navegacao-inferior button:hover,
+.navegacao-inferior a:hover {
+  color: white;
+}
+
+.navegacao-inferior button .icone,
+.navegacao-inferior a .icone {
+  margin-bottom: 3px;
+}
+
+.navegacao-inferior button.ativo,
+.navegacao-inferior a.ativo {
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .aplicativo {
+    box-shadow: 0 0 40px rgba(0, 0, 0, .35);
+  }
+}
+
+/* ===== Página: Agenda ===== */
+
+.cabecalho-pagina {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 24px 0;
+}
+
+.botao-voltar {
+  position: absolute;
+  left: 24px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 1px solid var(--linha);
+  background: var(--cartao);
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.botao-voltar:hover {
+  background: #14285e;
+}
+
+.botao-voltar img {
+  width: 20px;
+  height: 20px;
+}
+
+.titulo-pagina-agenda {
+  color: var(--amarelo-forte);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.introducao-voos {
+  padding: 36px 24px 0;
+}
+
+.introducao-voos h1 {
+  margin: 0 0 4px;
+  font-family: "Instrument Serif", serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.introducao-voos p {
+  margin: 0;
+  color: var(--cinza);
+  font-size: 16px;
+}
+
+.lista-voos {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px 24px 0;
+}
+
+.cartao-voo-agenda {
+  padding: 22px 24px;
+  border: 1px solid var(--linha);
+  border-radius: 34px;
+  background: var(--cartao);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cabecalho-voo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.selo-confirmado {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #3b3a37;
+  color: var(--amarelo-forte);
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.icone-check {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.rotulo-trecho {
+  color: var(--cinza);
+  font-size: 14px;
+}
+
+.data-voo {
+  margin-left: auto;
+  color: var(--cinza);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.rota-voo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.codigo-aeroporto {
+  font-size: 38px;
+}
+
+.linha-conectora {
+  flex: 1;
+  height: 1px;
+  background: var(--amarelo);
+}
+
+.seta-rota {
+  flex-shrink: 0;
+  color: var(--amarelo);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.aeronave-voo {
+  margin-top: 4px;
+  text-align: center;
+  color: var(--cinza);
+  font-size: 14px;
+}
+
+.historico-voos {
+  padding: 40px 24px 0;
+}
+
+.historico-voos h2 {
+  margin: 0 0 14px;
+  color: var(--cinza);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cartao-historico {
+  border: 1px solid var(--linha);
+  border-radius: 30px;
+  background: var(--cartao);
+  overflow: hidden;
+}
+
+.linha-historico {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+}
+
+.linha-historico + .linha-historico {
+  border-top: 1px solid var(--linha);
+}
+
+.rota-historico {
+  font-size: 22px;
+}
+
+.rota-historico span {
+  padding: 0 8px;
+  color: var(--cinza);
+}
+
+.aeronave-historico {
+  margin-top: 2px;
+  color: var(--cinza);
+  font-size: 13px;
+}
+
+.data-historico {
+  color: var(--cinza);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+@media (max-width: 360px) {
+  .introducao-voos,
+  .lista-voos,
+  .historico-voos {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .codigo-aeroporto {
+    font-size: 32px;
+  }
+}

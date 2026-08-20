@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jet-in — Agenda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/voos.css">
+</head>
+<body>
+  <main class="aplicativo">
+
+    <header class="cabecalho-pagina">
+      <a class="botao-voltar" href="index.html">
+        <img src="imagens/voltar.svg" alt="Voltar">
+      </a>
+      <span class="titulo-pagina-agenda">Agenda</span>
+    </header>
+
+    <section class="introducao-voos">
+      <h1>Seus voos</h1>
+      <p>Próximos</p>
+    </section>
+
+    <section class="lista-voos">
+      <article class="cartao-voo-agenda">
+        <div class="cabecalho-voo">
+          <span class="selo-confirmado">
+            <span class="icone-check">✓</span>
+            Confirmado
+          </span>
+          <span class="rotulo-trecho">Ida</span>
+          <span class="data-voo">06 ago - 7:30</span>
+        </div>
+        <div class="rota-voo">
+          <span class="codigo-aeroporto">CGH</span>
+          <span class="linha-conectora"></span>
+          <span class="seta-rota">→</span>
+          <span class="linha-conectora"></span>
+          <span class="codigo-aeroporto">SDU</span>
+        </div>
+        <div class="aeronave-voo">Citation CJ3</div>
+      </article>
+
+      <article class="cartao-voo-agenda">
+        <div class="cabecalho-voo">
+          <span class="selo-confirmado">
+            <span class="icone-check">✓</span>
+            Confirmado
+          </span>
+          <span class="rotulo-trecho">volta</span>
+          <span class="data-voo">07 ago - 8:00</span>
+        </div>
+        <div class="rota-voo">
+          <span class="codigo-aeroporto">SDU</span>
+          <span class="linha-conectora"></span>
+          <span class="seta-rota">→</span>
+          <span class="linha-conectora"></span>
+          <span class="codigo-aeroporto">CGH</span>
+        </div>
+        <div class="aeronave-voo">Citation CJ3</div>
+      </article>
+    </section>
+
+    <section class="historico-voos">
+      <h2>Histórico</h2>
+      <div class="cartao-historico">
+        <div class="linha-historico">
+          <div>
+            <div class="rota-historico">TAQ <span>→</span> TC</div>
+            <div class="aeronave-historico">Bell 505</div>
+          </div>
+          <div class="data-historico">22 Julho</div>
+        </div>
+
+        <div class="linha-historico">
+          <div>
+            <div class="rota-historico">VIX <span>→</span> POA</div>
+            <div class="aeronave-historico">Phenom 300E</div>
+          </div>
+          <div class="data-historico">28 Fevereiro</div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="navegacao-inferior">
+      <a href="index.html">
+        <img class="icone" src="imagens/home.svg" alt="">
+        início
+      </a>
+      <a href="reserva.html">
+        <img class="icone" src="imagens/reserva.svg" alt="">
+        Reservar
+      </a>
+      <a href="frota.html">
+        <img class="icone" src="imagens/aviao.svg" alt="">
+        Frota
+      </a>
+      <a class="ativo" href="voos.html">
+        <img class="icone" src="imagens/voos.svg" alt="">
+        Voos
+      </a>
+      <a href="conta.html">
+        <img class="icone" src="imagens/conta.svg" alt="">
+        Conta
+      </a>
+    </nav>
+
+  </main>
+</body>
+</html>

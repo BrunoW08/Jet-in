@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jet-in — Pagamento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/pagamento.css">
+</head>
+<body>
+  <main class="aplicativo">
+
+    <header class="cabecalho-pagina">
+      <a class="botao-voltar" href="escolher-volta.html">
+        <img src="imagens/voltar.svg" alt="Voltar">
+      </a>
+      <span class="titulo-pagina-pagamento">Pagamento</span>
+    </header>
+
+    <section class="cartao-resumo-pagamento">
+      <div class="trecho-pagamento">
+        <span class="selo-trecho">Ida</span>
+        <div class="rota-pagamento">São paulo - CGH para Rio de janeiro - SDU</div>
+        <div class="detalhe-pagamento">06 ago - 7:40 - citation CJ3</div>
+      </div>
+
+      <div class="trecho-pagamento">
+        <span class="selo-trecho">Volta</span>
+        <div class="rota-pagamento">São paulo - CGH para Rio de janeiro - SDU</div>
+        <div class="detalhe-pagamento">07 ago - 8:00 - citation CJ3</div>
+      </div>
+    </section>
+
+    <div class="titulo-metodo">Método de pagamento</div>
+    <div class="selecao-metodo">
+      <button class="metodo-item selecionado">
+        <img src="imagens/cartao.svg" alt="">
+        Cartão
+      </button>
+      <button class="metodo-item">
+        <img src="imagens/pix.svg" alt="">
+        PIX
+      </button>
+    </div>
+
+    <section class="cartao-formulario">
+      <div class="campo-formulario">
+        <label for="numero-cartao">Número do cartão</label>
+        <input type="text" id="numero-cartao" value="4321 •••• •••• 8899">
+      </div>
+
+      <div class="campo-formulario">
+        <label for="nome-titular">Nome do Titular</label>
+        <input type="text" id="nome-titular" value="Helder Palharini de Mattos">
+      </div>
+
+      <div class="linha-dupla">
+        <div class="campo-formulario">
+          <label for="validade-cartao">Validade</label>
+          <input type="text" id="validade-cartao" value="08/32">
+        </div>
+        <div class="campo-formulario">
+          <label for="cvv-cartao">CVV</label>
+          <input type="password" id="cvv-cartao" value="123">
+        </div>
+      </div>
+    </section>
+
+    <div class="linha-salvar">
+      <span>Salvar para futuras compras?</span>
+      <button class="interruptor ativo">
+        <span class="icone-check">✓</span>
+      </button>
+    </div>
+
+    <button class="botao-pagar">Pagar R$ 48.800 mil</button>
+
+  </main>
+</body>
+</html>
