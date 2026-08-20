@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jet-in — Nova reserva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/reserva.css">
+</head>
+<body>
+  <main class="aplicativo">
+
+    <header class="cabecalho-pagina">
+      <button class="botao-voltar" onclick="window.location.href='index.html'">
+        <img src="imagens/voltar.svg" alt="Voltar">
+      </button>
+      <span class="titulo-pagina">Nova reserva</span>
+    </header>
+
+    <section class="cabecalho-busca">
+      <h1>Vamos para onde hoje?</h1>
+      <p>tripulação verificada e concierge 24 horas</p>
+    </section>
+
+    <section class="cartao-rota">
+      <div class="linha-rota">
+        <div class="icone-localizacao">
+          <img src="imagens/origem.svg" alt="Ícone de localização de origem">
+        </div>
+        <div>
+          <div class="rotulo-rota">Origem</div>
+          <div class="valor-rota">São Paulo • CGH</div>
+        </div>
+      </div>
+
+      <div class="divisor-rota">
+        <span></span>
+        <button class="botao-trocar" aria-label="Trocar origem e destino">
+          <img src="imagens/trocar.svg" alt="">
+        </button>
+        <span></span>
+      </div>
+
+      <div class="linha-rota">
+        <div class="icone-localizacao">
+          <img src="imagens/destino.svg" alt="Ícone de localização de destino">
+        </div>
+        <div>
+          <div class="rotulo-rota">Destino</div>
+          <div class="valor-rota">Rio de Janeiro • SDU</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grade-datas">
+      <div class="cartao-data">
+        <div class="rotulo-caixa">
+          <img class="icone" src="imagens/data.svg" alt="">
+          Ida
+        </div>
+        <div class="valor-caixa">Qui, 06 agosto, 7:30</div>
+      </div>
+
+      <div class="cartao-data">
+        <div class="rotulo-caixa">
+          <img class="icone" src="imagens/data.svg" alt="data">
+          Volta
+        </div>
+        <div class="valor-caixa">Qui, 07 agosto, 8:00</div>
+      </div>
+    </div>
+
+    <div class="cartao-passageiros">
+      <div class="rotulo-caixa">
+        <img src="imagens/passageiros.svg" alt="">
+        Passageiros
+      </div>
+      <div class="valor-caixa">4 • 120kg bagagem</div>
+    </div>
+
+    <div class="titulo-aeronave">Tipo de aeronave</div>
+    <div class="grade-aeronaves">
+      <button class="cartao-aeronave">
+        <img src="imagens/helicoptero.svg" alt="Helicóptero">
+        <strong>Helicóptero</strong>
+        <small>Até 400km</small>
+      </button>
+
+      <button class="cartao-aeronave selecionado">
+        <img src="imagens/jato.svg" alt="Jato">
+        <strong>Jato</strong>
+        <small>Longas distâncias</small>
+      </button>
+
+      <button class="cartao-aeronave">
+        <img src="imagens/turboelice.svg" alt="Turboélice">
+        <strong>Turboélice</strong>
+        <small>Até 1.500km</small>
+      </button>
+    </div>
+
+    <section class="cartao-cotacao">
+      <div class="cotacao-cabecalho">
+        <h2 class="titulo-cotacao">Cotação estimada</h2>
+        <img class="icone-decolagem" src="imagens/aviao.svg" alt="">
+      </div>
+      <div class="preco-cotacao">R$ 18.400<span>estimativa</span></div>
+      <p class="detalhe-cotacao">inclui tripulação, bagagens, tarifa e taxas</p>
+      <button class="botao-primario">Ver opções de frota disponível</button>
+      <button class="botao-secundario">Falar com concierge</button>
+    </section>
+
+    <nav class="navegacao-inferior">
+      <button onclick="window.location.href='index.html'">
+        <img class="icone" src="imagens/home.svg" alt="">
+        início
+      </button>
+      <button class="ativo">
+        <img class="icone" src="imagens/reserva.svg" alt="">
+        Reservar
+      </button>
+      <button>
+        <img class="icone" src="imagens/aviao.svg" alt="">
+        Frota
+      </button>
+      <button>
+        <img class="icone" src="imagens/voos.svg" alt="">
+        Voos
+      </button>
+      <button>
+        <img class="icone" src="imagens/conta.svg" alt="">
+        Conta
+      </button>
+    </nav>
+
+  </main>
+</body>
+</html>

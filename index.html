@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jet-in</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <main class="aplicativo">
+
+    <header class="barra-superior">
+      <button class="botao-icone">
+        <img src="imagens/logo.svg" alt="">
+      </button>
+      <span class="logo">Jet-in</span>
+      <button class="botao-icone">
+        <img src="imagens/notificacoes.svg" alt="Notificações">
+      </button>
+    </header>
+
+    <section class="destaque">
+      <div class="destaque-midia">
+        <img class="destaque-imagem" src="imagens/principal.svg" alt="Helicóptero pousado em heliponto ao entardecer">
+      </div>
+      <div class="destaque-texto">
+        <div class="saudacao">Olá, Diego</div>
+        <h1>Pronto para a <span>próxima viagem?</span></h1>
+      </div>
+    </section>
+
+    <section class="cartao-busca">
+      <div class="linha-localizacao">
+        <div class="icone-localizacao">
+          <img src="imagens/origem.svg" alt="Ícone de localização de origem">
+        </div>
+        <div>
+          <div class="nome-localizacao">São Paulo</div>
+          <div class="codigo-localizacao">São Paulo - CGH</div>
+        </div>
+      </div>
+
+      <div class="linha-localizacao">
+        <div class="icone-localizacao">
+          <img src="imagens/destino.svg" alt="Ícone de localização de destino">
+        </div>
+        <div>
+          <div class="nome-localizacao">Rio de janeiro</div>
+          <div class="codigo-localizacao">Rio de Janeiro - SDU</div>
+        </div>
+      </div>
+
+      <div class="opcoes-busca">
+        <div class="opcao">
+          <span>Data e hora</span>
+          <strong>qui, 06 ago - 7:30</strong>
+        </div>
+        <div class="opcao">
+          <span>Passageiros</span>
+          <strong>4 Adultos</strong>
+        </div>
+      </div>
+
+      <button class="botao-busca" onclick="window.location.href='reserva.html'">
+        encontrar voo agora
+        <img class="icone icone-seta" src="imagens/setacima.svg" alt="setacima">
+      </button>
+    </section>
+
+    <section class="secao">
+      <div class="titulo-secao">
+        <h2>Seus Voos</h2>
+        <button>ver todos <img class="icone-pequeno seta-dourada" src="imagens/setadourada.svg" alt="seta-dourada"></button>
+      </div>
+
+      <article class="cartao-voo">
+        <div class="status-voo">confirmado</div>
+        <div class="voo-principal">
+          <div>
+            <div class="rota">TC <span>→</span> TAQ</div>
+            <div class="aeronave">cessna citation CJ3 • PT-ALT</div>
+          </div>
+          <div class="horario-voo">
+            <strong>07:30</strong>
+            <small>06 ago • 8min</small>
+          </div>
+        </div>
+        <div class="rodape-voo">
+          <span><img class="icone-pequeno" src="imagens/origem.svg" alt="origem"> Terminal VIP</span>
+          <span><img class="icone-pequeno" src="imagens/cronometro.svg" alt="destino"> check-in 20min antes</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="secao secao-frota">
+      <div class="titulo-secao">
+        <h2>Frota disponível</h2>
+        <button>explorar <img class="icone-pequeno seta-dourada" src="imagens/setadourada.svg" alt="seta-dourada"></button>
+      </div>
+
+      <div class="frota">
+        <article class="cartao-frota">
+          <img src="imagens/bell.svg" alt="Helicóptero Bell 505">
+          <div class="info-frota">
+            <span class="tipo">Helicóptero</span>
+            <strong>Bell 505</strong>
+            <small>Até 4 Passageiros</small>
+          </div>
+        </article>
+
+        <article class="cartao-frota">
+          <img src="imagens/citation.svg" alt="Jato Citation CJ3">
+          <div class="info-frota">
+            <span class="tipo">jato</span>
+            <strong>Citation CJ3</strong>
+            <small>Até 7 Passageiros</small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <nav class="navegacao-inferior">
+      <button class="ativo">
+        <img class="icone" src="imagens/home.svg" alt="inicio">
+        início
+      </button>
+      <button onclick="window.location.href='reserva.html'">
+        <img class="icone" src="imagens/reserva.svg" alt="reserva">
+        Reservar
+      </button>
+      <button>
+        <img class="icone" src="imagens/aviao.svg" alt="frota">
+        Frota
+      </button>
+      <button>
+        <img class="icone" src="imagens/voos.svg" alt="voos">
+        Voos
+      </button>
+      <button>
+        <img class="icone" src="imagens/conta.svg" alt="conta">
+        Conta
+      </button>
+    </nav>
+
+  </main>
+
+</body>
+</html>
